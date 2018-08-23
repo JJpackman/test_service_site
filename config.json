@@ -1,0 +1,16 @@
+{
+  "src": {
+    "root": "src",
+    "sass": "src/sass",
+    "js": "src/js",
+    "img": "src/img",
+    "fonts": "src/fonts"
+  },
+  "build": {
+    "root": "build",
+    "css": "build/css",
+    "img": "build/img",
+    "js": "build/js",
+    "fonts": "build/fonts"
+  }
+}
