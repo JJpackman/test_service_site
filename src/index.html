@@ -8,7 +8,261 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-  <h1>Test...</h1>
-  <script src="js/script.min.js"></script>
+  <header class="page-header">
+    <div class="page-header__wrapper container">
+      <a class="page-header__logo" aria-label="Moove to main page">
+        <picture>
+          <source type="image/webp" srcset="img/logo@1x.webp 1x, img/logo@2x.webp 2x, img/logo@3x.webp 3x">
+          <img class="page-header__logo-image" src="img/logo@1x.png" srcset="img/logo@2x.png 2x, img/logo@3x.png 3x" alt="Denteez test service logo" width="130" height="40" >
+        </picture>
+      </a>
+      <nav class="page-header__main-nav main-nav">
+        <div class="main-nav__wrapper">
+          <div class="main-nav__search search">
+            <label class="h-visually-hidden" for="search">Company search: </label>
+            <input id="search" class="search__field" name="query" type="text" placeholder="Company Name" role="search">
+            <svg class="search__icon" height="16" width="16" aria-hidden="true" role="presentation">
+              <use xlink:href="img/sprite.svg#icon-search"></use>
+            </svg>
+          </div>
+          <ul class="main-nav__list user-list">
+            <li class="user-list__item">
+              <a href="#" aria-label="Show chat">
+                <svg class="user-list__chat-icon" height="22" width="26" role="img">
+                  <title>Show chat</title>
+                  <use xlink:href="img/sprite.svg#icon-chat"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="user-list__item">
+              <a href="#" aria-label="Show notifications">
+                <svg class="user-list__notification-icon" height="24" width="24" role="img">
+                  <title>Show notifications</title>
+                  <use xlink:href="img/sprite.svg#icon-notifications"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="user-list__item">
+              <a href="#" class="user-list__user" aria-label="Go to user account">
+                <picture>
+                  <source type="image/webp" srcset="img/user-avatar@1x.webp 1x, img/user-avatar@2x.webp 2x">
+                  <img class="user-list__user-avatar" src="img/user-avatar@1x.png" srcset="img/user-avatar@2x.png 2x" alt="Maximillian Beekeeper" height="32" width="32">
+                </picture>
+                <span class="user-list__user-nickname">Maximillian Beekeeper</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main class="page-main-content container">
+    <aside class="nav-sidebar">
+    </aside>
+    <section class="service-section">
+      <header class="service-section__header">
+        <h1 class="service-section__header-text">Service Directory</h1>
+        <button class="button" type="button">Add new service</button>
+      </header>
+      <ul class="service-section__services-list services-list">
+        <li class="services-list__item">
+          <a class="services-list__item-link" href="#" aria-label="Get details about accountancy service">
+            <picture class="services-list__item-image-wrapper">
+              <source type="image/webp" srcset="img/accountancy-service@1x.webp 1x, img/accountancy-service@2x.webp 2x, img/accountancy-service@3x.webp 3x">
+              <img class="services-list__item-image" src="img/accountancy-service@1x.png" srcset="img/accountancy-service@2x.png 2x, img/accountancy-service@3x.png 3x" height="68" width="68" alt="Accountancy">
+            </picture>
+            <b class="services-list__item-title">Accountancy</b>
+          </a>
+        </li>
+        <li class="services-list__item">
+          <a class="services-list__item-link" href="#" aria-label="Get details about associations service">
+            <picture class="services-list__item-image-wrapper">
+              <source type="image/webp" srcset="img/associations-service@1x.webp 1x, img/associations-service@2x.webp 2x, img/associations-service@3x.webp 3x">
+              <img class="services-list__item-image" src="img/associations-service@1x.png" srcset="img/associations-service@2x.png 2x, img/associations-service@3x.png 3x" height="74" width="74" alt="Associations">
+            </picture>
+            <b class="services-list__item-title">Associations</b>
+          </a>
+        </li>
+        <li class="services-list__item">
+          <a class="services-list__item-link" href="#" aria-label="Get details about Buy/Sell Dental Practice service">
+            <picture class="services-list__item-image-wrapper">
+              <source type="image/webp" srcset="img/buy&sell-service@1x.webp 1x, img/buy&sell-service@2x.webp 2x, img/buy&sell-service@3x.webp 3x">
+              <img class="services-list__item-image" src="img/buy&sell-service@1x.png" srcset="img/buy&sell-service@2x.png 2x, img/buy&sell-service@3x.png 3x" height="72" width="72" alt="Buy/Sell Dental Practice">
+            </picture>
+            <b class="services-list__item-title">Buy/Sell Dental Practice</b>
+          </a>
+        </li>
+        <li class="services-list__item">
+          <a class="services-list__item-link" href="#" aria-label="Get details about Clinical Waste Collection service">
+            <picture class="services-list__item-image-wrapper">
+              <source type="image/webp" srcset="img/waste-service@1x.webp 1x, img/waste-service@2x.webp 2x, img/waste-service@3x.webp 3x">
+              <img class="services-list__item-image" src="img/waste-service@1x.png" srcset="img/waste-service@2x.png 2x, img/waste-service@3x.png 3x" height="71" width="71" alt="Clinical Waste Collection">
+            </picture>
+            <b class="services-list__item-title">Clinical Waste Collection</b>
+          </a>
+        </li>
+        <li class="services-list__item">
+          <a class="services-list__item-link" href="#" aria-label="Get details about computer service">
+            <picture class="services-list__item-image-wrapper">
+              <source type="image/webp" srcset="img/computer-service@1x.webp 1x, img/computer-service@2x.webp 2x, img/computer-service@3x.webp 3x">
+              <img class="services-list__item-image" src="img/computer-service@1x.png" srcset="img/computer-service@2x.png 2x, img/computer-service@3x.png 3x" height="71" width="71" alt="Computer service">
+            </picture>
+            <b class="services-list__item-title">Computer service</b>
+          </a>
+        </li>
+        <li class="services-list__item">
+          <a class="services-list__item-link" href="#" aria-label="Get details about CPR/Basic Life Support Training service">
+            <picture class="services-list__item-image-wrapper">
+              <source type="image/webp" srcset="img/support-service@1x.webp 1x, img/support-service@2x.webp 2x, img/support-service@3x.webp 3x">
+              <img class="services-list__item-image" src="img/support-service@1x.png" srcset="img/support-service@2x.png 2x, img/support-service@3x.png 3x" height="72" width="72" alt="CPR/Basic Life Support Training">
+            </picture>
+            <b class="services-list__item-title">
+              <abbr title="Cardiopulmonary resuscitation">CPR</abbr>/Basic Life Support Training
+            </b>
+          </a>
+        </li>
+        <li class="services-list__item">
+          <a class="services-list__item-link" href="#" aria-label="Get details about Dental Recruitment service">
+            <picture class="services-list__item-image-wrapper">
+              <source type="image/webp" srcset="img/dental-service@1x.webp 1x, img/dental-service@2x.webp 2x, img/dental-service@3x.webp 3x">
+              <img class="services-list__item-image" src="img/dental-service@1x.png" srcset="img/dental-service@2x.png 2x, img/dental-service@3x.png 3x" height="73" width="71" alt="Dental Recruitment">
+            </picture>
+            <b class="services-list__item-title">Dental Recruitment</b>
+          </a>
+        </li>
+        <li class="services-list__item">
+          <a class="services-list__item-link" href="#" aria-label="Get details about Dental software service">
+            <picture class="services-list__item-image-wrapper">
+              <source type="image/webp" srcset="img/dental-software-service@1x.webp 1x, img/dental-software-service@2x.webp 2x, img/dental-software-service@3x.webp 3x">
+              <img class="services-list__item-image" src="img/dental-software-service@1x.png" srcset="img/dental-software-service@2x.png 2x, img/dental-software-service@3x.png 3x" height="71" width="71" alt="Dental software">
+            </picture>
+            <b class="services-list__item-title">Dental software</b>
+          </a>
+        </li>
+        <li class="services-list__item">
+          <a class="services-list__item-link" href="#" aria-label="Get details about Electrical Safety And Testing service">
+            <picture class="services-list__item-image-wrapper">
+              <source type="image/webp" srcset="img/safety-service@1x.webp 1x, img/safety-service@2x.webp 2x, img/safety-service@3x.webp 3x">
+              <img class="services-list__item-image" src="img/safety-service@1x.png" srcset="img/safety-service@2x.png 2x, img/safety-service@3x.png 3x" height="72" width="71" alt="Electrical Safety And Testing">
+            </picture>
+            <b class="services-list__item-title">Electrical Safety And Testing</b>
+          </a>
+        </li>
+        <li class="services-list__item">
+          <a class="services-list__item-link" href="#" aria-label="Get details about marketing service">
+            <picture class="services-list__item-image-wrapper">
+              <source type="image/webp" srcset="img/marketing-service@1x.webp 1x, img/marketing-service@2x.webp 2x, img/marketing-service@3x.webp 3x">
+              <img class="services-list__item-image" src="img/marketing-service@1x.png" srcset="img/marketing-service@2x.png 2x, img/marketing-service@3x.png 3x" height="70" width="67" alt="marketing">
+            </picture>
+            <b class="services-list__item-title">marketing</b>
+          </a>
+        </li>
+        <li class="services-list__item">
+          <a class="services-list__item-link" href="#" aria-label="Get details about others service">
+            <picture class="services-list__item-image-wrapper">
+              <source type="image/webp" srcset="img/others-service@1x.webp 1x, img/others-service@2x.webp 2x, img/others-service@3x.webp 3x">
+              <img class="services-list__item-image" src="img/others-service@1x.png" srcset="img/others-service@2x.png 2x, img/others-service@3x.png 3x" height="69" width="70" alt="others">
+            </picture>
+            <b class="services-list__item-title">others</b>
+          </a>
+        </li>
+        <li class="services-list__item">
+          <a class="services-list__item-link" href="#" aria-label="Get details about repairs service">
+            <picture class="services-list__item-image-wrapper">
+              <source type="image/webp" srcset="img/repairs-service@1x.webp 1x, img/repairs-service@2x.webp 2x, img/repairs-service@3x.webp 3x">
+              <img class="services-list__item-image" src="img/repairs-service@1x.png" srcset="img/repairs-service@2x.png 2x, img/repairs-service@3x.png 3x" height="68" width="68" alt="repairs">
+            </picture>
+            <b class="services-list__item-title">repairs</b>
+          </a>
+        </li>
+        <li class="services-list__item">
+          <a class="services-list__item-link" href="#" aria-label="Get details about solicitors service">
+            <picture class="services-list__item-image-wrapper">
+              <source type="image/webp" srcset="img/solicitors-service@1x.webp 1x, img/solicitors-service@2x.webp 2x, img/solicitors-service@3x.webp 3x">
+              <img class="services-list__item-image" src="img/solicitors-service@1x.png" srcset="img/solicitors-service@2x.png 2x, img/solicitors-service@3x.png 3x" height="69" width="65" alt="solicitors">
+            </picture>
+            <b class="services-list__item-title">solicitors</b>
+          </a>
+        </li>
+        <li class="services-list__item">
+          <a class="services-list__item-link" href="#" aria-label="Get details about surgery design service">
+            <picture class="services-list__item-image-wrapper">
+              <source type="image/webp" srcset="img/design-service@1x.webp 1x, img/design-service@2x.webp 2x, img/design-service@3x.webp 3x">
+              <img class="services-list__item-image" src="img/design-service@1x.png" srcset="img/design-service@2x.png 2x, img/design-service@3x.png 3x" height="71" width="72" alt="surgery design">
+            </picture>
+            <b class="services-list__item-title">surgery design</b>
+          </a>
+        </li>
+        <li class="services-list__item">
+          <a class="services-list__item-link" href="#" aria-label="Get details about training and courses service">
+            <picture class="services-list__item-image-wrapper">
+              <source type="image/webp" srcset="img/courses-service@1x.webp 1x, img/courses-service@2x.webp 2x, img/courses-service@3x.webp 3x">
+              <img class="services-list__item-image" src="img/courses-service@1x.png" srcset="img/courses-service@2x.png 2x, img/courses-service@3x.png 3x" height="67" width="66" alt="training and courses">
+            </picture>
+            <b class="services-list__item-title">training & courses</b>
+          </a>
+        </li>
+        <li class="services-list__item">
+          <a class="services-list__item-link" href="#" aria-label="Get details about web designers service">
+            <picture class="services-list__item-image-wrapper">
+              <source type="image/webp" srcset="img/web-service@1x.webp 1x, img/web-service@2x.webp 2x, img/web-service@3x.webp 3x">
+              <img class="services-list__item-image" src="img/web-service@1x.png" srcset="img/web-service@2x.png 2x, img/web-service@3x.png 3x" height="68" width="68" alt="web designers">
+            </picture>
+            <b class="services-list__item-title">web designers</b>
+          </a>
+        </li>
+        <li class="services-list__item">
+          <a class="services-list__item-link" href="#" aria-label="Get details about cleaning agencies service">
+            <picture class="services-list__item-image-wrapper">
+              <source type="image/webp" srcset="img/cleaning-service@1x.webp 1x, img/cleaning-service@2x.webp 2x, img/cleaning-service@3x.webp 3x">
+              <img class="services-list__item-image" src="img/cleaning-service@1x.png" srcset="img/cleaning-service@2x.png 2x, img/cleaning-service@3x.png 3x" height="74" width="73" alt="cleaning agencies">
+            </picture>
+            <b class="services-list__item-title">cleaning agencies</b>
+          </a>
+        </li>
+        <li class="services-list__item">
+          <a class="services-list__item-link" href="#" aria-label="Get details about dental chair recovery service">
+            <picture class="services-list__item-image-wrapper">
+              <source type="image/webp" srcset="img/chair-service@1x.webp 1x, img/chair-service@2x.webp 2x, img/chair-service@3x.webp 3x">
+              <img class="services-list__item-image" src="img/chair-service@1x.png" srcset="img/chair-service@2x.png 2x, img/chair-service@3x.png 3x" height="72" width="72" alt="dental chair recovery">
+            </picture>
+            <b class="services-list__item-title">dental chair recovery</b>
+          </a>
+        </li>
+        <!-- lol -->
+        <li class="services-list__item">
+          <a class="services-list__item-link" href="#" aria-label="Get details about equipment engineering service">
+            <picture class="services-list__item-image-wrapper">
+              <source type="image/webp" srcset="img/equipment-service@1x.webp 1x, img/equipment-service@2x.webp 2x, img/equipment-service@3x.webp 3x">
+              <img class="services-list__item-image" src="img/equipment-service@1x.png" srcset="img/equipment-service@2x.png 2x, img/equipment-service@3x.png 3x" height="71" width="72" alt="equipment engineering">
+            </picture>
+            <b class="services-list__item-title">equipment engineering</b>
+          </a>
+        </li>
+        <li class="services-list__item">
+          <a class="services-list__item-link" href="#" aria-label="Get details about selling gold service">
+            <picture class="services-list__item-image-wrapper">
+              <source type="image/webp" srcset="img/selling-service@1x.webp 1x, img/selling-service@2x.webp 2x, img/selling-service@3x.webp 3x">
+              <img class="services-list__item-image" src="img/selling-service@1x.png" srcset="img/selling-service@2x.png 2x, img/selling-service@3x.png 3x" height="65" width="68" alt="selling gold">
+            </picture>
+            <b class="services-list__item-title">selling gold</b>
+          </a>
+        </li>
+        <li class="services-list__item">
+          <a class="services-list__item-link" href="#" aria-label="Get details about uniform and workwear service">
+            <picture class="services-list__item-image-wrapper">
+              <source type="image/webp" srcset="img/uniform-service@1x.webp 1x, img/uniform-service@2x.webp 2x, img/uniform-service@3x.webp 3x">
+              <img class="services-list__item-image" src="img/uniform-service@1x.png" srcset="img/uniform-service@2x.png 2x, img/uniform-service@3x.png 3x" height="71" width="57" alt="uniform and workwear">
+            </picture>
+            <b class="services-list__item-title">uniform & workwear</b>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <aside class="recommendations-sidebar">
+    </aside>
+  </main>
+  <script defer src="js/svg4everybody.min.js"></script>
+  <script defer src="js/script.min.js"></script>
 </body>
 </html>

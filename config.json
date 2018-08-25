@@ -1,4 +1,9 @@
 {
+  "js": [
+    "src/js/lib/**/*",
+    "src/js/polyfills.js",
+    "src/js/script.js"
+  ],
   "src": {
     "root": "src",
     "sass": "src/sass",

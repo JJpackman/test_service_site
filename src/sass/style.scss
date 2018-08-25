@@ -1,1 +1,25 @@
+// libs
+@import './lib//normalize.css';
 
+// global: variales, mixins, etc
+@import './global/_variables.scss';
+@import './global/_helpers.scss';
+
+// reusable components
+@import './components/_container.scss';
+@import './components/_header.scss';
+@import './components/_search.scss';
+@import './components/_user-list.scss';
+@import './components/_nav.scss';
+@import './components/_button.scss';
+@import './components/_nav-sidebar.scss';
+@import './components/_recommendations.scss';
+@import './components/_services.scss';
+
+// specific pages' style
+@import './pages/main.scss';
+
+img {
+  height: auto;
+  max-width: 100%;
+}

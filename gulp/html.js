@@ -4,6 +4,7 @@ const config = require('../config.json');
 
 gulp.task('html', function() {
   return gulp.src(config.src.root + '/*.html')
+    .pipe(plugins.plumber())
     .pipe(plugins.posthtml([
       require('posthtml-include')()
     ]))

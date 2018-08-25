@@ -3,11 +3,12 @@ const plugins = require('gulp-load-plugins')();
 const config = require('../config.json');
 
 gulp.task('copy', function() {
-  gulp.src([
-    config.src.img + '/**',
+  return gulp.src([
+    config.src.img + '/**/*.{png,jpg}',
     config.src.fonts + '/**/*.{woff,woff2}'
   ], {
     base: 'src'
   })
-    .pipe(gulp.dest(config.build.root))
+    .pipe(plugins.plumber())
+    .pipe(gulp.dest(config.build.root));
 });

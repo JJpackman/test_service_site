@@ -3,7 +3,11 @@ const plugins = require('gulp-load-plugins')();
 const config = require('../config.json');
 
 gulp.task('sprite', function() {
-  return gulp.src(config.src.img + '/**/icon-*.svg')
+  return gulp.src(config.src.img + '/**/*.svg')
+    .pipe(plugins.plumber())
+    .pipe(plugins.rename({
+      prefix: 'icon-'
+    }))
     .pipe(plugins.svgstore({
       inlineSvg: true
     }))

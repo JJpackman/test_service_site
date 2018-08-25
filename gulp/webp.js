@@ -4,6 +4,7 @@ const config = require('../config.json');
 
 gulp.task('webp', function() {
   return gulp.src(config.src.img + '/**/*.{png,jpg}')
+    .pipe(plugins.plumber())
     .pipe(plugins.webp({
       quality: 90
     }))

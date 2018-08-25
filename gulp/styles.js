@@ -4,7 +4,9 @@ const config = require('../config.json');
 
 gulp.task('styles', function () {
   return gulp.src(config.src.sass + '/style.{sass,scss}')
+    .pipe(plugins.plumber())
     .pipe(plugins.sass())
+    .pipe(plugins.cssimport())
     .pipe(plugins.postcss([
       require('autoprefixer')
     ]))

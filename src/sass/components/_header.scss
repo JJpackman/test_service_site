@@ -1,0 +1,25 @@
+.page-header {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: $green;
+  border-bottom: 2px solid $header-border-color;
+  margin-bottom: 10px;
+}
+
+.page-header__logo {
+  margin-right: 30px;
+}
+
+.page-header__logo-image {
+  width: 130px;
+}
+
+.page-header__wrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.page-header__main-nav {
+  flex-grow: 1;
+}

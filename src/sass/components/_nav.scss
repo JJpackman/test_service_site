@@ -1,0 +1,9 @@
+.main-nav__wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.main-nav__search {
+  margin-right: 30px;
+  flex-grow: 1;
+}

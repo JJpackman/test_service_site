@@ -6,10 +6,17 @@ gulp.task('images', function() {
   const { imagemin } = plugins;
 
   return gulp.src(config.src.img + '/**/*.{png,jpg,svg}')
+    .pipe(plugins.plumber())
     .pipe(imagemin([
       imagemin.jpegtran({progressive: true}),
       imagemin.optipng({optimizationLevel: 3}),
-      imagemin.svgo()
+      imagemin.svgo({
+        plugins: [
+          {
+            removeAttrs: { attrs: '(fill)' }
+          }
+        ]
+      })
     ]))
     .pipe(gulp.dest(config.src.img));
 });
