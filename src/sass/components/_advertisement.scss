@@ -1,0 +1,23 @@
+.advertisement {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding-bottom: 15px;
+  border-bottom: 1px solid $divider-color;
+}
+
+.advertisement__title {
+  margin-bottom: 15px;
+  color: $medium-grey;
+}
+
+.advertisement__addresser {
+  margin-top: 5px;
+  color: $light-grey;
+}
+
+.avertisement__poster {
+  &--bordered {
+    border: 1px solid $advertisement-poster-stroke;
+  }
+}

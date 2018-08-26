@@ -4,3 +4,8 @@
 .page-main-content {
   display: flex;
 }
+
+.page-main-content__sidebar {
+  flex-shrink: 0;
+  width: 212px;
+}
