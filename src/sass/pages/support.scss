@@ -1,0 +1,46 @@
+.support-page__header {
+  display: flex;
+  flex-direction: column;
+  min-height: 510px;
+  background-image: url('../img/support-header-bg.jpg');
+  background-image: url('../img/support-header-bg.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.support-page__header-nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 34px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.support-page__header-promo {
+  max-width: 550px;
+  margin-top: 105px;
+  align-self: center;
+}
+
+.support-page__header-promo-title,
+.support-page__header-promo-text {
+  font-family: 'Metropolis Light';
+  font-weight: normal;
+  color: $white;
+  text-align: center;
+}
+
+.support-page__header-promo-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 48px;
+}
+
+.support-page__header-promo-text {
+  margin-top: 15px;
+  line-height: 1.5;
+  font-size: 20px;
+}
