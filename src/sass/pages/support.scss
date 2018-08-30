@@ -1,3 +1,7 @@
+// parts specific to support page
+@import './parts/_feedback.scss';
+@import './parts/_about-section.scss';
+
 .support-page__header {
   display: flex;
   flex-direction: column;
@@ -17,11 +21,18 @@
   margin-top: 34px;
   margin-left: 40px;
   margin-right: 40px;
+  margin-bottom: -10px;
+}
+
+.support-page__header-logo {
+  margin-bottom: 10px;
 }
 
 .support-page__header-promo {
   max-width: 550px;
   margin-top: 105px;
+  padding-left: 40px;
+  padding-right: 40px;
   align-self: center;
 }
 
@@ -41,6 +52,7 @@
 
 .support-page__header-promo-text {
   margin-top: 15px;
+  margin-bottom: 135px;
   line-height: 1.5;
   font-size: 20px;
 }

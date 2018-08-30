@@ -49,23 +49,3 @@
   margin-top: 15px;
 }
 
-.sidebar__footer-copyright {
-  margin-bottom: 15px;
-}
-
-.sidebar__footer-copyright,
-.sidebar__footer-link {
-  color: $sidebar-footer-font-color;
-  font-size: 12px;
-}
-
-.sidebar__footer-link {
-  text-decoration: none;
-  margin-right: 20px;
-  margin-bottom: 5px;
-
-  &:last-child {
-    margin-right: 0;
-  }
-}
-

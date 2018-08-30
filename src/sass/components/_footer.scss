@@ -1,0 +1,27 @@
+.footer-copyright {
+  margin-bottom: 15px;
+  margin-right: 10px;
+}
+
+.footer-copyright,
+.footer-link {
+  color: $sidebar-footer-font-color;
+  font-size: 12px;
+}
+
+.footer-link {
+  text-decoration: none;
+  margin-right: 20px;
+  margin-bottom: 5px;
+
+  &:last-child {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}

@@ -12,7 +12,7 @@
 <body>
   <header class="support-page__header">
     <nav class="support-page__header-nav">
-      <a class="logo" href="index.html" aria-label="Moove to main page">
+      <a class="support-page__header-logo logo" href="index.html" aria-label="Moove to main page">
         <picture>
           <source type="image/webp" srcset="img/logo@1x.webp 1x, img/logo@2x.webp 2x, img/logo@3x.webp 3x">
           <img class="logo__image" src="img/logo@1x.png" srcset="img/logo@2x.png 2x, img/logo@3x.png 3x" alt="Denteez test service logo"
@@ -28,6 +28,73 @@
       </p>
     </div>
   </header>
+  <section class="feedback">
+    <h2 class="h-visually-hidden">Feedback form</h2>
+    <form method="POST" action="#" class="feedback__form form">
+      <div class="feedback__form-body">
+        <p class="form__remark">Fields marked "*" are required</p>
+        <div class="form__field-wrapper">
+          <label class="field__label" for="enquire">Enquire Type *</label>
+          <select id="enquire" class="form__field" name="enquire-options" required>
+            <option value="other" selected>Other</option>
+            <option value="solicited">Solicited</option>
+            <option value="favour">Favour</option>
+          </select>
+          <p class="form__field-wrapper h-visually-hidden">
+            <label class="field__label" for="enquire-other">Enquire Type Duplicated *</label>
+            <input id="enquire-other" class="form__field" name="enquire-other" type="text" placeholder="Other">
+          </p>
+        </div>
+        <div class="form__field-wrapper form__field-wrapper--multiple">
+          <p class="form__field-wrapper">
+            <label class="field__label" for="name">Name *</label>
+            <input id="name" class="form__field" name="name" type="text" placeholder="Dentist" required>
+          </p>
+          <p class="form__field-wrapper">
+            <label class="field__label" for="email">Email *</label>
+            <input id="email" class="form__field" name="email" type="text" placeholder="rachelm@gmail.com" required>
+          </p>
+        </div>
+        <div class="form__field-wrapper">
+          <label class="field__label" for="subject">Subject *</label>
+          <input id="subject" class="form__field" name="subject" type="text">
+        </div>
+        <div class="form__field-wrapper">
+          <label class="field__label" for="description">Description *</label>
+          <textarea id="description" class="form__field form__field--textarea" name="description" cols="30" rows="7" maxlength="1000"
+            required></textarea>
+        </div>
+      </div>
+      <button class="feedback__form-button button button--fullwidth">Submit</button>
+    </form>
+  </section>
+  <section class="about-section">
+    <div class="about-section__wrapper">
+      <h2 class="about-section__title">About Denteez</h2>
+      <div class="about-section__info">
+        <p class="about-section__description">
+          Why is it always so difficult to find what you are looking for in dentistry? Whether it is the latest advancement in technology
+          or techniques or simply a review or understanding of the vast amount of products? Perhaps finding someone to just
+          fix your broken equipment or simply hiring new staff or looking for that new job?
+        </p>
+        <p class="about-section__description">
+          Our mission is to give every dental professional the possibility to discuss and share all aspects of their profession, their
+          practice and their business. We aim to make the world of dentistry easy and accessible, so every dental professional
+          can find what they are looking for quickly and easily all in one place.
+        </p>
+      </div>
+    </div>
+  </section>
+  <footer class="about-section__footer footer">
+    <div class="about-section__footer-wrapper">
+      <span class="footer-copyright">Denteez Copyright 2015</span>
+      <div class="footer-links">
+        <a class="footer-link" href="#">Support</a>
+        <a class="footer-link" href="#">Terms of use</a>
+        <a class="footer-link" href="#">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
   <script defer src="js/svg4everybody.min.js"></script>
   <script defer src="js/script.min.js"></script>
 </body>
